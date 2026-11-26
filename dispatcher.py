@@ -4,8 +4,8 @@ class RideDispatcher:
         total_revenue = 0.0
 
         for ride in ride_list:
-            ride.start_ride()
-            total_revenue += ride.calculate_fare()
-            ride.complete_ride()
+            ride.startRide()
+            total_revenue += ride.calculateFare()
+            ride.completeRide()
 
         print(f"\nTotal Revenue for this batch: php{total_revenue:.2f}")
